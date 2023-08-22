@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fruit Search</title>
+    <style>
+        /* Add styling for the body with a linear gradient background */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #3498db, #2980b9); /* Adjust colors as needed */
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* Style the search bar */
+        #fruit {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        /* Style the dropdown */
+        .suggestions .dropdown {
+            width: 300px;
+            margin: 10px auto;
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent background with white text */
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* Style the options in the dropdown */
+        .suggestions .dropdown option {
+            padding: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        /* Style the highlighted option */
+        .suggestions .dropdown option.highlighted {
+            background-color: #2980b9; /* Highlight color */
+            color: white; /* Text color on highlight */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fruit Search</h1>
+    <input type="text" id="fruit" placeholder="Search for a fruit...">
+    <div class="suggestions">
+        <select class="dropdown"></select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
